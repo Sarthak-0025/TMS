@@ -1,0 +1,296 @@
+/* Font Styles */
+@font-face {
+	font-family: 'productreg';
+	src: url('productreg.ttf');
+}
+
+@font-face {
+	font-family: 'productbold';
+	src: url('productbold.ttf');
+}
+
+/* Body Styles */
+body {
+	font-family: 'productreg';
+	color: #E1E1E1;
+	/*background-color: #1F1F1F;*/
+	/* Darker background color */
+	margin: 0;
+			/* ... your existing styles ... */
+			background-image: url('Background.jpg');
+			background-size: cover;
+			/* Adjust to cover the entire screen */
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			/* Fixed background */
+		
+}
+
+/* Jumbotron Styles */
+.jumbotron.login-header {
+	/*background: linear-gradient(45deg, #3498db, #2ecc71);*/
+	background-image: url('Background.jpg');
+		background-size: cover;
+		/* Adjust to cover the entire screen */
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	/* Gradient background */
+	color: #fff;
+	border-radius: 15px;
+	padding: 50px;
+	margin: 50px 0 30px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+	text-align: center;
+	position: relative;
+}
+
+.jumbotron.login-header img {
+	border-radius: 50%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	/* Add space above the image */
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	object-position: top center;
+	/* Adjusted object position */
+	border: 4px solid #fff;
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron.login-header h1,
+.jumbotron.login-header h4 {
+	margin-bottom: 20px;
+}
+
+.jumbotron.login-header h1 {
+	font-size: 2.5em;
+}
+
+.jumbotron.login-header h4 {
+	font-size: 1.5em;
+	line-height: 1.4;
+}
+
+.jumbotron.login-header a.btn {
+	font-size: 1.2em;
+	padding: 10px 20px;
+	margin-top: 20px;
+	border-radius: 25px;
+	background-color: #fff;
+	color: #3498db;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+	position: relative;
+	z-index: 2;
+}
+
+.jumbotron.login-header a.btn:hover {
+	background-color: #2ecc71;
+	color: #fff;
+}
+
+/* Container Styles */
+.container-fluid {
+	margin-top: -110px;
+	padding: 0;
+	background-image: url('Background.jpg');
+		background-size: cover;
+		/* Adjust to cover the entire screen */
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+}
+
+/* After Login Styles */
+.after-login {
+	border-radius: 50px;
+	margin: 50px;
+	padding: 5px;
+	padding-top: 110px;
+}
+
+.login-header.after-login h4 {
+	font-size: 15px;
+}
+
+.login-header.after-login h1 {
+	font-size: 55px;
+}
+
+.login-header.after-login i {
+	font-size: 65px;
+}
+
+/* Module Styles */
+.module,
+.module-after-login {
+	transition: all 0.6s cubic-bezier(0.75, -0.5, 0.25, 1.75);
+	z-index: 500;
+	width: 50%;
+	margin: -150px auto 50px;
+	padding: 180px 0 150px;
+	border-radius: 50px;
+	text-align: center;
+	background-color: #2c3e50;
+	/* Slightly lighter background color */
+	box-shadow: 0 10px 30px rgba(45, 45, 45, 0.5), 0 6px 12px rgba(45, 45, 45, 0.5);
+}
+
+.module-after-login {
+	width: 70%;
+	margin: -200px auto 50px;
+}
+
+/* Module Input Styles */
+.module input {
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	border-radius: 25px;
+	line-height: 50px;
+	color: #E1E1E1;
+	background-color: #34495e;
+	/* Different input background color */
+	border: 3px solid #2c3e50;
+	/* Darker border color */
+	text-align: inherit;
+	font-size: 20px;
+	outline: none;
+	min-width: 300px;
+}
+
+::placeholder {
+	color: #95a5a6;
+	/* Placeholder text color */
+}
+
+/* Module Button Styles */
+.module button.btn,
+button {
+	font-family: 'productbold';
+	background: #3498db;
+	/* Professional button color */
+	color: #E1E1E1;
+	font-size: 20px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	min-width: 200px;
+	min-height: 50px;
+}
+
+button:focus,
+.module button.btn:focus {
+	outline: 0;
+}
+
+button {
+	transition: all 0.3s linear;
+	background: #2c3e50;
+	/* Darker button background color */
+	font-family: 'productreg';
+	border: 2px solid #E1E1E1;
+	min-width: 150px;
+	margin: 5px;
+}
+
+input:disabled {
+	color: #95a5a6;
+	border: 3px solid #95a5a6;
+}
+
+button:disabled {
+	border: 2px solid #404040;
+	/* Darker disabled button border color */
+	color: #404040;
+	/* Darker disabled button text color */
+}
+
+button:hover {
+	background: #3498db;
+	/* Hover color change */
+}
+
+/* Heading Styles */
+h4 {
+	border-top: 2px solid #E1E1E1;
+	margin: 30px auto 0;
+	padding-top: 20px;
+	max-width: 700px;
+	font-family: 'productbold';
+	font-size: 35px;
+}
+
+/* Ticket Styles */
+.ticket {
+	display: inline-block;
+	border: 2px solid #3498db;
+	border-radius: 20px;
+	margin: 15px 10px;
+	padding: 10px 15px 15px;
+}
+
+/* Additional Heading Styles */
+.login-header h4 {
+	font-family: 'productreg';
+	border: none;
+	margin: 15px auto 0;
+	padding-top: 0;
+}
+
+h5 {
+	font-family: 'productbold';
+	margin-top: 20px;
+	font-size: 25px;
+}
+
+h6 {
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+/* Picker Styles */
+.picker__box {
+	background: #2c3e50;
+	/* Darker date picker background color */
+	border-radius: 30px;
+}
+
+.picker__day--disabled,
+.picker__day--disabled:hover,
+.picker--focused .picker__day--disabled {
+	background-color: #2c3e50;
+	/* Darker disabled date picker background color */
+	border-color: #2c3e50;
+	color: #95a5a6;
+}
+
+.picker__button--today,
+.picker__button--clear,
+.picker__button--close {
+	background: #2c3e50;
+	color: #95a5a6;
+	border-color: #2c3e50;
+}
+
+.picker {
+	color: #E1E1E1;
+}
+
+.picker__day--outfocus {
+	color: #95a5a6;
+}
+
+.picker__list-item,
+.picker--time .picker__box {
+	background: #2c3e50;
+}
+
+.picker__list {
+	margin-top: 17px;
+}
+
+.picker__list-item {
+	border-top: none;
+}
